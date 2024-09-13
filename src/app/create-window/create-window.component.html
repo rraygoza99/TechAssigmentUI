@@ -1,0 +1,22 @@
+<mat-dialog-content>
+<div [formGroup]="taskForm">
+    <mat-form-field>
+        <mat-label>Name:</mat-label>
+        <input formControlName="name" matInput/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Description:</mat-label>
+        <input formControlName="description" matInput/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Due Date:</mat-label>
+        <input [matDatepicker]="picker" formControlName="dueDate" matInput/>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
+<mat-dialog-actions>
+    <button mat-button (click)="createTask()">Save</button>
+</mat-dialog-actions>
+</mat-dialog-content>

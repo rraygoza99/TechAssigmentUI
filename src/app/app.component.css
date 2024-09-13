@@ -1,0 +1,29 @@
+.taskTitle{
+    color: black;
+    min-width: 200px;
+}
+.taskDate{
+    color: black;
+    margin-left: auto;
+    padding-left: 16px;
+}
+.taskCompleted{
+    float: right;
+}
+.listItemContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+.taskLate{
+    background-color: rgba(232, 33, 33, .3);
+}
+.taskCompleted > span{
+    background-color: rgba(11, 215, 86, .3);
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+.taskEdit{
+    text-decoration: none !important;
+}
